@@ -17,18 +17,18 @@ Here you input the first filename, dont inlcude `.db`, and i dont recommend crea
 
 we have a folder of files like this
 
-`sqlite3-shell-windows.py
+`sqlite3-shell-windows.py`
 
-test.db`
+`test.db`
 
 now lets load our test database to do commands
 
 so we input the filename of database:
 
 `Welcome, please input your first database you wanna load or start creating it
-.-----------------------------------------------------------------------------
+.-----------------------------------------------------------------------------`
 
-filename of db>test`
+`filename of db>test`
 
 then we should have a message saying "Database loaded!" and ready to run sqlite commands!
 
