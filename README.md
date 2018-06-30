@@ -1,5 +1,5 @@
 # SQLite3-Shell
-An SQLite3 Shell made in Python, By Me!, Linux Availlabilty soon!
+An SQLite3 Shell made in Python, By Me!
 # Using the shell:
 The Shell is available on windows only so far! You can use it anywhere to modify your databases and use the commands! Linux will be coming also
 # Requirements
