@@ -27,6 +27,7 @@ so we input the filename of database:
 
 `Welcome, please input your first database you wanna load or start creating it
 .-----------------------------------------------------------------------------
+
 filename of db>test`
 
 then we should have a message saying "Database loaded!" and ready to run sqlite commands!
