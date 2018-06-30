@@ -5,11 +5,8 @@ import traceback
 
 print("Booting Sqlite3 shell...")
 print("------------------------")
-print("The Version of Python must be available is Python 3+ and Windows Machine")
-print("News about the shell:")
-print("---------------------")
-print("Linux availability is coming!")
-time.sleep(4)
+print("The Version of Python must be available is Python 3+")
+time.sleep(2)
 os.system("cls")
 print("Welcome, please input your first database you wanna load or start creating it")
 print("-----------------------------------------------------------------------------")
