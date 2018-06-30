@@ -8,7 +8,7 @@ The Shell is available on windows only so far! You can use it anywhere to modify
 
 **OS:** Windows (Available), Linux (Available)
 # How to use it!
-First wait for 4 seconds to load, once done, you should be able to be waiting for an input like this:
+First wait for 2 seconds to load, once done, you should be able to be waiting for an input like this:
 ![alt text](https://cdn.discordapp.com/attachments/435865641619161108/462563610531463169/unknown.png)
 
 Here you input the first filename, dont inlcude `.db`, and i dont recommend creating or loading a blank database!
