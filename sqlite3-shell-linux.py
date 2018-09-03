@@ -26,14 +26,14 @@ finally:
     print("----------------")
     time.sleep(2)
     os.system("clear")
-    print("SQLite3 Shell v1.0 by GeorgeCY (Made in Python) [BETA]")
+    print("SQLite3 Shell v1.1 by GeorgeCY (Made in Python)")
     print("------------------------------")
 
 while True:
     try:
-        commands = input(">")
+        commands = input("sqlite>")
         if commands == "close":
-            c.close()
+            c.closse()
             db.close()
             print("Closing...")
             break
@@ -52,14 +52,14 @@ while True:
             print("commit: commit/saves the database (occurs error when none of the changes was made)")
             print("[Note: when the number 0 Prints, it means sucess!]")
             print("[Another Note is that the program is currently in BETA!]")
-            print("(ignore error on bottom:)")
-            print("-----------------------")
-            pass
+
+
+
 
         c.execute(f"{commands}")
         print(0)
         
-        if commands.startswith("SELECT"):
+        if commands.upper().startswith("SELECT"):
             for rows in c.fetchall():
                 print(rows)
         
