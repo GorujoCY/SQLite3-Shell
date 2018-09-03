@@ -33,7 +33,7 @@ while True:
     try:
         commands = input("sqlite>")
         if commands == "close":
-            c.closse()
+            c.close()
             db.close()
             print("Closing...")
             break
@@ -52,6 +52,7 @@ while True:
             print("commit: commit/saves the database (occurs error when none of the changes was made)")
             print("[Note: when the number 0 Prints, it means sucess!]")
             print("[Another Note is that the program is currently in BETA!]")
+            continue
 
 
 
