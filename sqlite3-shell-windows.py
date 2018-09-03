@@ -26,7 +26,7 @@ finally:
     print("----------------")
     time.sleep(2)
     os.system("cls")
-    print("SQLite3 Shell v1.0 by GeorgeCY (Made in Python) [BETA]")
+    print("SQLite3 Shell v1.0 by GeorgeCY (Made in Python)")
     print("------------------------------")
 
 while True:
