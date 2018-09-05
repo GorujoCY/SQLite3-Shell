@@ -42,16 +42,21 @@ while True:
             print("Exitting...")
             break
         
+        if command == "whats-new":
+            print("What's New in V1.1:")
+            print("1. Minor improvements and better handling")
+            print("2. Now you can use the 'SELECT' statement in any cases (like lowercase, capital etc.)[Recommended to use it in uppercase]")
+        
         if commands == "help":
             print("Help:")
             print("Shell Commands:")
             print("exit: Exits the program (not way recommended because it doesnt close the database!)")
             print("close: Closes the database, then exits the shell!")
+            print("whats-new: Prints whats new (this is going to be used in every update of the shell)")
             print("-------------------------------------------------")
             print("Database Commands:")
             print("commit: commit/saves the database (occurs error when none of the changes was made)")
             print("[Note: when the number 0 Prints, it means sucess!]")
-            print("[Another Note is that the program is currently in BETA!]")
             continue
 
 
