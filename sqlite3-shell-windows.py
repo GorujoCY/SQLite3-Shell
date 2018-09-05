@@ -51,6 +51,7 @@ while True:
             print("Shell Commands:")
             print("exit: Exits the program (not way recommended because it doesnt close the database!)")
             print("close: Closes the database, then exits the shell!")
+            print("whats-new: Prints whats new in every update")
             print("-------------------------------------------------")
             print("Database Commands:")
             print("commit: commit/saves the database (occurs error when none of the changes was made)")
