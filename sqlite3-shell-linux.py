@@ -46,6 +46,7 @@ while True:
             print("What's New in V1.1:")
             print("1. Minor improvements and better handling")
             print("2. Now you can use the 'SELECT' statement in any cases (like lowercase, capital etc.)[Recommended to use it in uppercase]")
+            continue
         
         if commands == "help":
             print("Help:")
