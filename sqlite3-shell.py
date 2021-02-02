@@ -2,15 +2,26 @@ import sqlite3
 import time
 import os
 import traceback
+from sys import platform
+
+clear_comm = "cls"
+if platform in ["linux", "linux2"]:
+    clear_comm = "clear"
+elif platform == "darwin":
+    clear_comm = "printf '\\33c\\e[3J'"
 
 print("Booting Sqlite3 shell...")
 print("------------------------")
-print("The Version of Python must be available is Python 3+")
+print("The required version of Python is Python 3+")
 time.sleep(2)
-os.system("cls")
+os.system(clear_comm)
 print("Welcome, please input your first database you wanna load or start creating it")
 print("-----------------------------------------------------------------------------")
 filename = input("filename of db> ")
+while filename == "":
+    print("Please enter a database name.")
+    filename = input("filename of db> ")
+
 print("Please Wait...")
 print("--------------")
 try:
@@ -19,19 +30,23 @@ try:
 except:
     print("something went wrong, or failed to load database!")
     print("Restart shell!")
-    input("")
+    input()
     exit()
 finally:
     print("Database loaded!")
     print("----------------")
     time.sleep(2)
-    os.system("cls")
+    os.system(clear_comm)
     print("SQLite3 Shell v1.1 by GeorgeCY (Made in Python)")
     print("------------------------------")
 
 while True:
     try:
-        commands = input("sqlite>")
+        commands = input("sqlite> ")
+        while commands == "":
+            print("Please enter an sqlite3 command.")
+            commands = input("sqlite> ")
+
         if commands == "close":
             c.close()
             db.close()
@@ -41,6 +56,7 @@ while True:
         if commands == "exit":
             print("Exitting...")
             break
+        
         if commands == "whats-new":
             print("What's New in V1.1:")
             print("1. Minor improvements and better handling")
@@ -61,7 +77,14 @@ while True:
 
 
 
-        c.execute(f"{commands}")
+
+        output =  c.execute(f"{commands}")
+        if not output:
+            print("No output.")
+        else:
+            for line in output:
+                print(line)
+
         print(0)
         
         if commands.upper().startswith("SELECT"):
@@ -72,7 +95,6 @@ while True:
             db.commit()
             print("database commited!")
         
-       
     except:
         print("Error Occured:")
         traceback.print_exc()
